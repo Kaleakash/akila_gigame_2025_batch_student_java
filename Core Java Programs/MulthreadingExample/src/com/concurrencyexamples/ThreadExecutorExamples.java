@@ -29,7 +29,7 @@ public class ThreadExecutorExamples {
         for(int i=0;i<5;i++) {
             Future<Thread> ff = executor.submit(tt1);
             System.out.println(ff.get());
-            
+
                 if(ff.isDone()){
 
                     Future<Thread> ff1 = executor.submit(tt2);
