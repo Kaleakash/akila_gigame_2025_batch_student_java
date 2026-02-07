@@ -28,13 +28,15 @@ public class EmployeeOperations {
 //				listOfEmployees.stream().collect(Collectors.groupingBy(e->e.getDepartment(),Collectors.counting()));
 //		System.out.println(result2);
 		
-		Map<Boolean, List<Emloyee>> partitionMap =
-				listOfEmployees.stream()
-		                 .collect(Collectors.partitioningBy(
-		                         e -> e.getSalary() > 50000
-		                 ));
-
-		System.out.println(partitionMap);
+//		Map<Boolean, List<Emloyee>> partitionMap =
+//				listOfEmployees.stream()
+//		                 .collect(Collectors.partitioningBy(
+//		                         e -> e.getSalary() > 50000
+//		                 ));
+//
+//		System.out.println(partitionMap);
+		
+		Collector.of
 	}
 
 }
